@@ -56,7 +56,6 @@ persn.style.border="1px solid gray"
 persn.innerText =person.name
 persn.style.height ="300px"
 persn.style.width ="300px"
-
 root.appendChild(persn)
 })
 

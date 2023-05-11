@@ -1,49 +1,54 @@
+const root = document.getElementById("root")
 
-/**
- * Adds two numbers and returns a result
- * @param a  first num
- * @param b  second num
- * @author Mitch mitch@opher.co.za
- * @return number - a+b
- */
-const add =(a,b) => { 
-    let num = [1,6,9,2]
-    // double every item in the array and return a new array
-    const n2 = num.map(a=> a*2)
-    return a+b
-}
-const members = [{
-    name: "S"
-}]
+root.setAttribute("height", 500)
+root.setAttribute("width", 500)
+root.setAttribute("class", "container")
 
-const People = [
-    {
-        name: "Sihle",
-        surname: "Maphanga",
-        age: 12,
-        gender: "KDZL",
-        email: "e.chain@gmail.com",
-        add:(a,b)=> a+b
-     },
-     {
-        name: "Nomandla",
-        surname: "Khwenenyana",
-        age: 32,
-        gender: "KDZL",
-        email: "e.chain@gmail.com",
-        add:(a,b)=> a+b
-     },
-     {
-        name: "Sapho",
-        surname: "Tiki",
-        age: 32,
-        gender: "KDZL",
-        email: "e.chain@gmail.com",
-        add:(a,b)=> a+b
-     } 
-]
+root.style.minHeight = "20vh"
 
-const num = [1,2, "str1", 'str2', (name)=>`Greetings ${name}`, function sub(a,b){return a-b}, (a,b)=>a*b ] // starts at index 0 
-console.log(num[6](6000,3))
-console.log(num[4]("Nomandla"))
-console.log(People)
+// create an element
+
+const h1 = document.createElement("h1")
+h1.innerText = "My Application"
+h1.setAttribute("id", "appTitle")
+h1.style.color = "white"
+/// add h1 to the root
+
+root.appendChild(h1)
+
+const p = document.createElement("p")
+p.innerText = "Lorem ipksnxc dgiscddbsan xsdcdehdfuyws xwdjhdbvws dhwd wdjwsq"
+
+const black = document.createElement("div")
+black.style.backgroundColor ="black"
+black.minHeight ='40vh'
+black.setAttribute("height", 400)
+const bh1 = document.createElement("h1")
+bh1.innerText="Sample test of my text"
+black.appendChild(bh1)
+black.appendChild(p)
+black.style.color="white"
+
+const green = document.createElement("div")
+green.style.backgroundColor ="green"
+green.minHeight ='40vh'
+green.setAttribute("height", 400)
+green.appendChild(h1)
+green.appendChild(p)
+
+const purple = document.createElement("div")
+purple.style.backgroundColor ="purple"
+purple.minHeight ='20vh'
+purple.setAttribute("height", 400)
+purple.appendChild(h1)
+purple.appendChild(p)
+
+
+root.appendChild(black)
+root.appendChild(green)
+root.appendChild(purple)
+
+console.log(root)
+
+// Practice creating the following tags using javascript: h1, p, a, article, section, ul,li, div
+

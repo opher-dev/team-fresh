@@ -48,7 +48,19 @@ root.appendChild(black)
 root.appendChild(green)
 root.appendChild(purple)
 
-console.log(root)
+People.map((person)=> {
+const persn = document.createElement("div");
+persn.style.borderRadius="50%";
+persn.style.padding ="3px";
+persn.style.border="1px solid gray"
+persn.innerText =person.name
+persn.style.height ="300px"
+persn.style.width ="300px"
+
+root.appendChild(persn)
+})
+
+// arrays - map ,pop,shift
 
 // Practice creating the following tags using javascript: h1, p, a, article, section, ul,li, div
 

@@ -95,10 +95,13 @@ southAfrica.kzn = {
 
 southAfrica['kzn']['schools'] = [
     {
-        name: "", location: "", students: 400, headTeach: "Malema", passRate: 30, teachers: 10
+        name: "Laezonia", location: "laezonia", students: 400, headTeach: "Malema", passRate: 30, teachers: 10
     },
     {
-        name: "", location: "", students: 300, headTeacher: "Molefe", passRate: 80, teachers: 20
+        name: "Soweto", location: "soweto", students: 300, headTeacher: "Molefe", passRate: 80, teachers: 20
+    },
+    {
+        name: "Diepsloot", location: "pretoria", students: 300, headTeacher: "Sihle", passRate: 10, teachers: 8
     }
 ]
 
@@ -158,7 +161,7 @@ southAfrica.kzn.hospitals.map(h=> {
 
 // console.log(southAfrica.kzn.hospitals[0].fn(300,30,50000,120));
 // console.log(southAfrica.kzn.hospitals[0].stats());
-console.log(southAfrica.kzn.hospitals[1].stats());
+// console.log(southAfrica.kzn.hospitals[1].stats());
 
 
 // let h = (3,4,5,2) // set
@@ -171,3 +174,125 @@ console.log(southAfrica.kzn.hospitals[1].stats());
 // // South Africa, Azania, Sud Afrique.
 
 // let Azania
+
+// control flow
+// if statements, switch statements
+a= [100,200,300,400,500];
+b= [200,400,800,1600,3200,6400]; // b[0]=200, b[1]=400, b[2]=800, b[3]=1600, b[4]=3200
+
+// if(a[0]==b[0]) {
+//     console.log(a[0],'=', b[0]  )
+// } else if (a[0]<b[0]) {
+//     console.log(a[0],'<', b[0]  )
+
+// }else {
+//     console.log(a[0])
+// }
+
+// if(a.length == b.length) {
+//     console.log("A is the same  in legth to B")
+// }
+
+// if(a[1]-a[0] == b[1]-b[0]) {
+//     console.log("The diferences between the numbers are the same:", )
+// } else if (a[1]-a[0] != b[1]-b[0]) {
+//     console.log("The diferences between the numbers are not the same:", a[1]-a[0],'!=',b[1]-b[0])
+// }
+
+const myname = 'Mitch Chanza'
+// string - split, lenth, charAt
+// console.log(myname.length)
+// Dom manipulation
+
+const today = "Wednesday";
+// switch(today) {
+//     case 'Monday':
+//         console.log("Today id my favourite day")
+//         break;
+//     case 'Tuesday':
+//         console.log("This coresponds to my Birthday");
+//         break;
+//     case 'Wednesday':
+//         console.log('This is wednesday')
+//         break;
+//     default:
+//         console.log("I have not found any match")
+//         break;
+// };
+
+const namesofchurches=["palm","Grace","WordofFaith","Pentacostal","Amazing","HolySpirit","ChristAmbassy","UpperRoom"];
+
+const body = document.querySelector("body");
+const ul= document.createElement("ol");
+for(let church of namesofchurches) {
+    const li = document.createElement("li");
+    li.innerText= church
+    ul.appendChild(li)
+}
+
+const table = document.createElement("table");
+
+southAfrica.kzn.schools.map((school,index)=>{
+  if(index===0) {
+    Object.keys(school).map(h=>{
+        const th= document.createElement("th");
+        th.textContent= h
+        table.appendChild(th)
+    
+    })
+  }
+  Object.values(school).map(s=>{
+    const tr = document.createElement("tr");
+    const td= document.createElement('td');
+    td.textContent=s
+    tr.appendChild(td)
+    table.appendChild(tr);
+  })
+})
+body.appendChild(table);
+body.appendChild(ul)
+// for(let s=0; s<namesofchurches.length; s++) {
+//     // console.log(s, namesofchurches[s])
+//     switch(namesofchurches[s]) {
+//         case 'Grace':
+//             // console.log("This is my Church");
+//             break;
+//         default:
+//             // console.log("This is not my church");
+//             break;
+//     }
+// }
+
+// for(let a in namesofchurches) {
+//     // console.log(a)
+// }
+
+// for (let x of namesofchurches) {
+//     // console.log(x);
+// }
+
+// namesofchurches.forEach(c=> console.log(c))
+
+// namesofchurches.map(church=>{})
+// namesofchurches.map((church)=> {
+//     // console.log(church)
+// })
+// namesofchurches.map(function(church){})
+
+// Object.entries(southAfrica.kzn).map(([key, value])=>{
+//     // console.log(key, value)
+// })
+
+// Object.keys(southAfrica.kzn).map(key=>console.log(key));
+// Object.values(southAfrica.kzn).map(value=>console.log(value));
+
+
+
+// for loops //
+// looping through objects
+// looping through arrays
+
+
+
+
+

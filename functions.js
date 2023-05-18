@@ -24,7 +24,6 @@ num.map(db);
 // // named external fn- tis his hoisted
 function db(value) {
     createLi(value,ul1, 'double')
-    //console.log(index,value , 'Doubled =', value*2)
 }
 
 // arrow functions are not hoisted. 
@@ -33,5 +32,7 @@ const workFN = (value) =>{
 }
 num.map(workFN);
 
-
-
+// tenary operators
+// condition ? true result : false result
+(a+b ===100) ? console.log("This is indeed 100") : console.log("This isn't 100")
+if(a+b==100){console.log("This is indeed 100") }else{ console.log("This isn't 100")}

@@ -35,12 +35,13 @@ javascript has a number of data types => Data structures
 ## Fetch data from API (Fetch API))
  - Promises
  - async/await
- - using remote data
+ - using the remote data in HTML
 
-## Create An API
+## Create An API (Backend Dev)
  - create  data
  - fetch the data
 
 ## Deploy The application
+ - deploy to Github
 
 

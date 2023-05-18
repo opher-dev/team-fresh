@@ -32,4 +32,15 @@ javascript has a number of data types => Data structures
 
 ## Dom Manipulation
 
+## Fetch data from API (Fetch API))
+ - Promises
+ - async/await
+ - using remote data
+
+## Create An API
+ - create  data
+ - fetch the data
+
+## Deploy The application
+
 

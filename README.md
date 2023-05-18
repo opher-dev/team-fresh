@@ -27,6 +27,8 @@ javascript has a number of data types => Data structures
 - objects {} -> one of the complex types.  JSON: JavaScript Objects Notation
 
 ## Functions
+ - Types of functions
+ - creating re-usable functions
 
 ## Control Flow
 

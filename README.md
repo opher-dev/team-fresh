@@ -31,8 +31,12 @@ javascript has a number of data types => Data structures
  - creating re-usable functions
 
 ## Control Flow
-
+- if statemenst
+- switch statements
+- tenary operators
 ## Dom Manipulation
+- create elements dynamicslly
+- crreate attributes
 
 ## Fetch data from API (Fetch API))
  - Promises

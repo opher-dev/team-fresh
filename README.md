@@ -17,17 +17,19 @@ types of Comments
     const add=(a,b) => a+b
  ```
 ## variables
-
+- let 
+- var
+- cosnt
 ## Data Types
 
 javascript has a number of data types => Data structures
 - number 1,2 ,3, 4,
-- arrays
-- strings 
-- objects {} -> one of the complex types.  JSON: JavaScript Objects Notation
+- arrays - map, forEach, loops, 
+- strings - split, lenth
+- objects {} -> one of the complex types.  JSON: JavaScript Objects Notation , namespace
 
 ## Functions
- - Types of functions
+ - Types of functions : named functions and arrow functions
  - creating re-usable functions
 
 ## Control Flow
@@ -37,10 +39,12 @@ javascript has a number of data types => Data structures
 ## Dom Manipulation
 - create elements dynamicslly
 - crreate attributes
+- styling htm  using js
+- creating tables using dynamic data object or arrays
 
-## Fetch data from API (Fetch API))
- - Promises
- - async/await
+## Fetch data from API (Fetch API)
+ - Promises -
+ - async/await -
  - using the remote data in HTML
 
 ## Create An API (Backend Dev)

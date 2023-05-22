@@ -20,7 +20,10 @@ const createDom =(data, div,endpoint) =>{
                     div.appendChild(p)
                     anoth(key,value)
                 } else {
-                    anoth(key,value)
+                    // anoth(key,value)
+                    Object.entries(value).map(([k,v])=> {
+                        // if statements
+                    })
                 }
             })
             break;
